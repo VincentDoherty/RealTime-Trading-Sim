@@ -63,10 +63,8 @@ I --> J[WebSocket Gateway]
 J --> A
 H --> D
 H --> C
-```
 
----
-```mermaid
+
 sequenceDiagram
     participant U as User
     participant API as API Server
