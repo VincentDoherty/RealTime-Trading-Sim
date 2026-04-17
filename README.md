@@ -47,30 +47,25 @@ At its core is a **price-time priority matching engine**, similar to real-world 
 ---
 
 ## 🏗️ System Architecture
+
 ```mermaid
 graph TD
-
 A[Client - React / Postman] --> B[API Layer - FastAPI / Spring Boot]
-
 B --> C[Auth Service]
 B --> D[Order Management Service]
 B --> E[Matching Engine]
-
 D --> E
-
 E --> F[In-Memory Order Book]
 E --> G[Trade Execution Engine]
-
 G --> H[PostgreSQL Database]
-
 E --> I[Event Dispatcher]
-
 I --> J[WebSocket Gateway]
 J --> A
-
 H --> D
 H --> C
 ```
+
+---
 ```mermaid
 sequenceDiagram
     participant U as User
@@ -95,7 +90,7 @@ sequenceDiagram
         ME->>DB: Store Open Order
     end
 ```
-
+---
 ```
 
 Client (React / Web UI)
