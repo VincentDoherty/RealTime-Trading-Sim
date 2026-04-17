@@ -47,7 +47,7 @@ At its core is a **price-time priority matching engine**, similar to real-world 
 ---
 
 ## 🏗️ System Architecture
-
+```
 ```mermaid
 graph TD
 A[Client - React / Postman] --> B[API Layer - FastAPI / Spring Boot]
@@ -64,7 +64,9 @@ J --> A
 H --> D
 H --> C
 
+---
 
+```mermaid
 sequenceDiagram
     participant U as User
     participant API as API Server
