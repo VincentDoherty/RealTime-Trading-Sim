@@ -1,4 +1,4 @@
-```markdown
+
 # 🚀 Real-Time Distributed Trading Exchange Simulator
 
 A high-performance backend-focused trading simulation platform that replicates core functionality of a financial exchange, including a custom order matching engine, real-time market updates, and portfolio tracking.
@@ -47,7 +47,6 @@ At its core is a **price-time priority matching engine**, similar to real-world 
 ---
 
 ## 🏗️ System Architecture
-```
 ```mermaid
 graph TD
 A[Client - React / Postman] --> B[API Layer - FastAPI / Spring Boot]
